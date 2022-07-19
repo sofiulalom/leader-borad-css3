@@ -4,6 +4,52 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #f3f1ff;
+    margin: 0;
+    padding: 0;
+}
+.top-bar{
+    background-color: #562Eff;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.fa-bolt{
+padding: 10px;
+}
+.logo-title{
+    font-size: 15px;
+}
+nav ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+.efect:hover{
+   background-color: black;
+}
+li a> img{
+    width: 25px;
+    border-radius: 100%;
 }
 main{
     display: flex;
@@ -128,6 +174,9 @@ hr{
     .container{
         width: 100%;
     }
+    .top-bar{
+        flex-direction: column;
+    }
     .players, .blogs, .courses{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -147,9 +196,11 @@ hr{
     }
     .players, .courses{
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
     .blogs{
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
     }
     
 }
